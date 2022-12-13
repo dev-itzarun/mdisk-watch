@@ -1,13 +1,8 @@
-<script>
-	import favicon from '$lib/images/favicon.ico';
-</script>
-
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About Mdisk Watch" />
 	<meta name="msapplication-TileColor" content="#2483d5" />
 	<meta name="theme-color" content="#2483d5" />
-	<link rel="icon" type="image/png" href={favicon} />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
