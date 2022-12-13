@@ -1,6 +1,7 @@
 <script>
 	// @ts-nocheck
 
+	import favicon from "$lib/images/favicon.ico"
 	import videojs from 'video.js';
 
 	import { onMount } from 'svelte';
@@ -29,6 +30,7 @@
 		<meta name="description" content="Svelte demo app" />
 		<meta name="msapplication-TileColor" content="#2483d5" />
 		<meta name="theme-color" content="#2483d5" />
+		<link rel="icon" type="image/png" href="{favicon}">
 
 		<!-- Primary Meta Tags -->
 		<title>{data.obj.filename} | Mdisk Watch</title>
