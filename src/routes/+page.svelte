@@ -27,8 +27,11 @@
 	export function opennewtab() {
 		const form_value = document.getElementById('id').value;
 		const url  = new URL(form_value);
-		var video_id = url.searchParams.get('id');
-		console.log(video_id);
+		// var video_id = url.searchParams.get('id');
+		var paths = url.pathname;
+		const path_decode  = paths.split("/");
+		const video_id = path_decode[3];
+		// console.log(video_id);
 		const redirect_path = "?id="+video_id;
 		location.href=redirect_path;
 	}
