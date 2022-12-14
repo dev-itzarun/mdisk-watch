@@ -1,6 +1,5 @@
 <script>
 	// @ts-nocheck
-	import {  redirect } from '@sveltejs/kit';
 	import videojs from 'video.js';
 
 	import { onMount } from 'svelte';
@@ -111,10 +110,10 @@
 			</a>
 		</div>
 		<b
-			><h2>
+			><h5>
 				In Mobiles Videos Can be only downloaded with Mxplayer <br /><br />
 				In Pc Videos Can be only downloaded with IDM
-			</h2>
+			</h5>
 		</b>
 	{:else}
 		<div class="mb-3">
