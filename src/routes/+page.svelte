@@ -12,7 +12,6 @@
 			var source = data.obj.source;
 			const player = videojs('my-player');
 			player.fluid(true);
-			player.autoplay(true);
 			player.responsive(true);
 			player.ready(() => {
 				player.src({
@@ -25,14 +24,14 @@
 
 	export function opennewtab() {
 		const form_value = document.getElementById('id').value;
-		const url  = new URL(form_value);
+		const url = new URL(form_value);
 		// var video_id = url.searchParams.get('id');
 		var paths = url.pathname;
-		const path_decode  = paths.split("/");
+		const path_decode = paths.split('/');
 		const video_id = path_decode[3];
 		// console.log(video_id);
-		const redirect_path = "?id="+video_id;
-		location.href=redirect_path;
+		const redirect_path = '?id=' + video_id;
+		location.href = redirect_path;
 	}
 </script>
 
@@ -80,7 +79,6 @@
 			id="my-player"
 			class="video-js vjs-16-9 vjs-big-play-centered rcorners1"
 			controls
-			preload="auto"
 		>
 			<p class="vjs-no-js">
 				To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -89,19 +87,21 @@
 				</a>
 			</p>
 		</video>
-		<div class="pt-3 pb-5">
+		<p class="text-left pt-4">Play:</p>
+		<div class="btn-group" role="group" aria-label="Basic mixed styles example">
 			<a
-				class="btn btn-light"
+				class="btn btn-primary"
 				href="intent:{data.obj
 					.source}#Intent;action=com.mxtech.videoplayer.ad.playback_local;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;package=com.mxtech.videoplayer.ad;b.decode_mode=2;S.mx_stream_url={data
-					.obj.source};S.title={data.obj.filename};end"
+					.obj.source};S.title={data.obj.filename};end">Mxplayer</a
 			>
-				Play with Mxplayer
-			</a>
+			<a class="btn btn-warning" href="vlc://{data.obj.source}">Vlc Mobile</a>
 		</div>
-		<div class="pb-3">
+		<p class="text-left pt-3">Download:</p>
+
+		<div class="btn-group" role="group" aria-label="Basic mixed styles example">
 			<a
-				class="btn btn-light"
+				class="btn btn-primary"
 				href="intent:{data.obj
 					.download}#Intent;action=com.mxtech.videoplayer.ad.download;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;package=com.mxtech.videoplayer.ad;b.decode_mode=2;S.title={data
 					.obj.filename};end"
@@ -109,15 +109,13 @@
 				Download with Mxplayer
 			</a>
 		</div>
-		<b
-			><h5>
-				In Mobiles Videos Can be only downloaded with Mxplayer <br /><br />
-				In Pc Videos Can be only downloaded with IDM
-			</h5>
+		<b class="pt-3">
+			In Mobiles Videos Can be only downloaded with Mxplayer <br /><br />
+			In Pc Videos Can be only downloaded with IDM
 		</b>
 	{:else}
 		<div class="mb-3">
-			<label for="exampleInputEmail1" class="form-label">Email Mdisk.me URL</label>
+			<label for="exampleInputEmail1" class="form-label">Enter Mdisk.me URL</label>
 			<input type="text" class="form-control" id="id" />
 		</div>
 		<button type="buttton" class="btn btn-light" on:click={opennewtab}>Submit</button>
