@@ -35,7 +35,7 @@
 
 	<p>How to use :</p>
 	<ul>
-		<li style="padding-top: 2px;">Simply pass mdiskvideo id ex:?id=ABCDE .</li>
+		<li style="padding-top: 2px;">Simply Enter Mdisk.me URL Ex:?id=https://mdisk-watch.vercel.app/?id=TJyFK9.</li>
 		<li style="padding-top: 2px;">
 			Or Send Mdisk Url to Our Telegram Bot : <a href="https://t.me/mdisk_dynamic_link_bot"
 				>https://t.me/mdisk_dynamic_link_bot</a
