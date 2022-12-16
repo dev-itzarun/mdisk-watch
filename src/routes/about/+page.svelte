@@ -33,6 +33,17 @@
 		<li style="padding-top: 2px;">Supports Multiple Language Videos</li>
 	</ul>
 
+	<p>DCMA :</p>
+	<ul>
+		<li style="padding-top: 2px;">This Site Does not Host / Share any Content</li>
+		<li style="padding-top: 2px;">This site just provide a way to watch videos online from <a href="https://mypowerdisk.com/"
+				>https://mypowerdisk.com/</a
+			>
+		</li>
+		<li style="padding-top: 2px;">I requested you to not make any Legal action or dmca complaint on this site.<br>
+			Instead you can make any Legal action or dmca complaint about mypowerdisk.com</li>
+	</ul>
+
 	<p>How to use :</p>
 	<ul>
 		<li style="padding-top: 2px;">Simply Enter Mdisk.me URL Ex:?id=https://mdisk-watch.vercel.app/?id=TJyFK9.</li>
